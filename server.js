@@ -6,7 +6,9 @@ import { nanoid } from "nanoid";
 import jwt from "jsonwebtoken";
 import cors from "cors";
 import admin from "firebase-admin";
-import serviceAccountKey from "./blog-website-d253f-firebase-adminsdk-l9f6j-d2c11921c2.json" assert { type: "json" };
+// The Firebase service account is supplied as JSON through the FIREBASE_SERVICE_ACCOUNT
+// environment variable. Never commit the key file.
+const serviceAccountKey = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 import { getAuth } from "firebase-admin/auth";
 import multer from "multer";
 import { v2 as cloudinary } from "cloudinary";
