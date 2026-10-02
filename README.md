@@ -71,6 +71,7 @@ A full-featured blog platform built using the MERN stack (MongoDB, Express.js, R
     CLOUDINARY_CLOUD_NAME=your-cloudinary-cloud-name
     CLOUDINARY_API_KEY=your-cloudinary-api-key
     CLOUDINARY_API_SECRET=your-cloudinary-api-secret
+    FIREBASE_SERVICE_ACCOUNT=your_firebase_service_account_json_on_one_line
     ```
 
 5. Create a `.env` file in the `client` folder with the following variables:
